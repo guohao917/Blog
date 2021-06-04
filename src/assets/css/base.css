@@ -1,0 +1,39 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffbf0;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  font-style: normal
+}
+
+p {
+  font-size: 16px;
+  color: darkgrey;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  outline: none; 
+  font-size: 20px;
+  color: #759b08;
+  cursor: pointer 
+}
+
+input{
+	background:none;  
+	outline:none;  
+	border:1px solid #ccc;
+  width: 350px;
+  height: 40px;
+}
