@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <div>
-      <headerTitle />
+      <header-title />
       <tabBar v-if="isShow" />
       <div class="content-router">
-        <router-view />
+        <router-view/>
       </div>
     </div>
     <div class="login">
@@ -37,6 +37,6 @@ export default {
   }
 
   .content-router {
-    width: 1000px;
+    width: 800px;
   }
 </style>

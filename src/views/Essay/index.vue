@@ -27,6 +27,10 @@ export default {
     return {
       essContent: [
         {
+          createTime: '2020-6-7',
+          content: '关山难过关关过，前路漫漫亦灿灿'
+        },
+        {
           createTime: '2020-6-4',
           content: '完成了时间线页面的组件二次封装，本想着用用自己去封装组件写，但是实在麻烦写得还不见的好看，还是用一下组件库吧'
         },

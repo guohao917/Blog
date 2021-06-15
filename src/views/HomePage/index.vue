@@ -29,8 +29,7 @@
     </div>
     <chatTalk
     :class= "{isActive: currentIndex === index}" 
-    v-for="(item, index) 
-    in chatContent" 
+    v-for="(item, index) in chatContent" 
     :key="index" 
     :chatContent = chatContent[index]
     @handleDetails="handleDetails(item.type)"
@@ -179,13 +178,13 @@ export default {
   }
 
   .letter {
-    width: 1000px;
-    height: 1000px;
+    width: 700px;
+    height: 700px;
     position: fixed;
     left: 50%;
     top: 50%;
-    margin-top: -500px;
-    margin-left: -500px;
+    margin-top: -350px;
+    margin-left: -350px;
     background-color: pink;
     z-index: 99;
   }

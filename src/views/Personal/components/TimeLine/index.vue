@@ -2,10 +2,10 @@
   <div class="content">
     <template v-for="item in TimeList">
       <el-timeline :key="item.name">
-        <el-timeline-item :timestamp="item.time" placement="top">
-          <el-card class="card">
-            <h4>{{item.title}}</h4>
-            <p class="card-p">{{item.content}}</p>
+        <el-timeline-item :timestamp="item.time" placement="top" class="item">
+          <el-card>
+            <div><h4>{{item.title}}</h4></div>
+            <div><p class="card-p">{{item.content}}</p></div>
           </el-card>
         </el-timeline-item>
       </el-timeline>
@@ -29,11 +29,28 @@ export default {
       
     }
   },
+  created () {
+    console.log(this.TimeList);
+    console.log(this.TimeJ);
+    console.log(this.TimeO);
+  },
   props: {
     TimeList: {
       type: Array,
-      default: () => []
-    }
+      default: () => {}
+    },
+    // TimeO: {
+    //   type: Object,
+    //   default: () => {  真是错误的写法，默认的返回值拿不到，返回的是undefined
+    //     name: 'GH1'
+    //   }
+    // },
+    // TimeJ: {
+    // type: Object,
+    // default: () => ({
+    //   name: 'GH2'
+    // })
+    // }
   },
   components: {
     // ...Menu,
@@ -44,6 +61,8 @@ export default {
 
 <style scoped>
   .card {
+    display: flex !important;
+    flex-direction:column-reverse;
     padding: 10px 0
   }
   .card-p {

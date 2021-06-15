@@ -1,6 +1,6 @@
 <template>
   <div class="chat">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_2581633_an6grt1hjjm.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2581633_9z6no6rpub5.css">
     <div class="chat-img">
       <img :src="imgUrlList" alt="" width="450px" height="300px">
     </div>
@@ -33,7 +33,12 @@ export default {
 
   methods: {
     handleDetails() {
-      this.$emit('handleDetails');
+      const TOKEN = window.sessionStorage.getItem('TOKEN')
+      if (TOKEN === 'admin') {
+        this.$emit('handleDetails');
+      }else {
+       this.$router.push('/403')
+      }
     },
     handleMouseOver() {
       this.$emit('handleMouseOver')
@@ -79,7 +84,7 @@ export default {
 
 
 .chat-content-icon span {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .chat-content-icon span:last-child {

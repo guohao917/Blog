@@ -48,6 +48,11 @@ const routes = [
     component: () => import("@/views/Personal"),
     meta: {role: 'admin'}
   },
+  {
+    path: '/formList',
+    name: 'formList',
+    component: () => import("@/views/FormList")
+  }
 ]
 
 const router = new VueRouter({

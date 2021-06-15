@@ -46,7 +46,7 @@ export default {
 <style scoped>
  .wrapper {
    width: 100%;
-   background-color: #bfab86;
+   background-color: #cecdb4;
  }
 
  .wrapper-list {
@@ -54,7 +54,7 @@ export default {
    display: flex;
    align-items: center;
    height: 60px;
-   background-color: #bfab86;
+   background-color: #cecdb4;
  }
 
   .wrapper-list li {
